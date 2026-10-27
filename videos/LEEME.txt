@@ -1,0 +1,1 @@
+Poné acá tus videos (video-1.mp4 y video-2.mp4), o cargá el id de YouTube en el bloque VIDEOS de index.html.

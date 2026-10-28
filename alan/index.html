@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alan Rodrigo Moreno · Desarrollador Full Stack</title>
+<title>Alan Rodrigo Moreno · Desarrollador Backend y Full Stack Java</title>
 <meta name="description" content="Desarrollador Full Stack (Java, Spring Boot, React, TypeScript). Diseño, desarrollo y puesta en producción de sistemas completos. Seis proyectos en uso por clientes reales.">
 <meta property="og:title" content="Alan Rodrigo Moreno · Desarrollador Full Stack">
 <meta property="og:description" content="Sistemas completos, de la base de datos a la pantalla. Seis proyectos en producción.">
@@ -142,7 +142,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div>
     <span class="status"><i></i>Disponible para nuevas oportunidades</span>
     <h1>Alan Rodrigo<br>Moreno</h1>
-    <p class="role">Desarrollador Full Stack · Java y React</p>
+    <p class="role">Desarrollador Backend y Full Stack · Java</p>
     <p class="lede">Diseño y desarrollo sistemas completos, de la base de datos a la pantalla, y los llevo a producción. Hoy hay seis en uso por negocios reales.</p>
     <div class="cta">
       <a class="btn primary" id="wa1" href="#contacto">Contactarme por WhatsApp</a>
@@ -184,6 +184,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="stack-grid rv" id="stack-grid"></div>
 </div></section>
 
+<section id="formacion"><div class="wrap">
+  <div class="rv"><span class="eyebrow">Formación</span><h2>Estudio y práctica, en paralelo.</h2></div>
+  <div class="princ rv" id="edu" style="grid-template-columns:repeat(2,1fr)"></div>
+</div></section>
+
 <section id="proyectos"><div class="wrap">
   <div class="rv"><span class="eyebrow">Proyectos</span><h2>Seis sistemas en producción.</h2><p class="lede">Todos los desarrollé de punta a punta. Cada uno resuelve el día a día de un negocio distinto.</p></div>
   <div id="projects"></div>
@@ -201,27 +206,29 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="cta">
     <a class="btn primary" id="wa2" href="#">Escribirme por WhatsApp</a>
     <a class="btn" href="Alan-Rodrigo-Moreno-CV.pdf" download>Descargar CV (PDF)</a>
+    <a class="btn" href="mailto:morenorodrigoalan@gmail.com">Enviar un email</a>
     <a class="btn" href="https://github.com/MorAlan9" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/alan-rodrigo-moreno-25951a310" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="../" target="_blank" rel="noopener">Bambú Sistemas</a>
   </div>
-  <div class="links"><span>WhatsApp 3541 20-4059</span><a href="https://github.com/MorAlan9" target="_blank" rel="noopener">github.com/MorAlan9</a></div>
+  <div class="links"><span>WhatsApp 3541 20-4059</span><a href="mailto:morenorodrigoalan@gmail.com">morenorodrigoalan@gmail.com</a><a href="https://linkedin.com/in/alan-rodrigo-moreno-25951a310" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MorAlan9" target="_blank" rel="noopener">github.com/MorAlan9</a></div>
 </div></section>
 </main>
 
-<footer><div class="wrap"><span>© <span id="yr"></span> Alan Rodrigo Moreno</span><span>Desarrollador Full Stack</span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Alan Rodrigo Moreno</span><span>Desarrollador Backend y Full Stack Java</span></div></footer>
 
 <script>
 const CONTACT = { whatsapp: "5493541204059", texto: "Hola Alan, vi tu portafolio y me gustaría conversar sobre una oportunidad." };
 
 const SKILLS = [
-  { t: "Backend y APIs", d: "APIs REST con Spring Boot, autenticación con JWT, roles y permisos, migraciones con Flyway." },
+  { t: "Backend y APIs", d: "APIs REST con Spring Boot, autenticación con JWT, roles y permisos, migraciones con Flyway. Integraciones como facturación electrónica de AFIP y módulos de OCR." },
   { t: "Interfaces web", d: "React y TypeScript con diseño propio, animación con GSAP y Three.js, y paneles de gestión con gráficos." },
   { t: "Aplicaciones de escritorio", d: "Sistemas instalables con JavaFX que trabajan sin internet y se sincronizan con la nube." },
   { t: "Puesta en producción", d: "Docker, Render, Netlify y Supabase. Licencias y actualizaciones remotas para clientes en distintos locales." }
 ];
 
 const STACK = [
-  { t: "Backend", i: ["Java 21 / 24", "Spring Boot", "Spring Security + JWT", "JPA / Hibernate", "Flyway", "API REST"] },
+  { t: "Backend", i: ["Java 21 / 24", "Spring Boot", "Spring Security + JWT", "JPA / Hibernate", "Flyway", "API REST y WebServices", "MVC / DAO"] },
   { t: "Frontend", i: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "React Router"] },
   { t: "Animación y gráficos", i: ["GSAP + ScrollTrigger", "Three.js", "Lenis", "Recharts", "Leaflet (mapas)", "PWA"] },
   { t: "Datos e infraestructura", i: ["PostgreSQL", "MySQL", "H2", "Supabase", "Docker", "Render · Netlify · Git"] }
@@ -235,7 +242,7 @@ const PROJECTS = [
     links: [["Código en GitHub", "https://github.com/MorAlan9/Avenir_front"]] },
   { name: "LuVal", tag: "Gastronomía", img: "../img/gastro-2-cocina.webp",
     d: "Sistema para restaurantes y bares: el mozo toma el pedido en la mesa, la comanda sale al sector correcto, la cocina la ve en pantalla y la caja cobra y factura.",
-    did: ["Salón con estado de mesas y comandas por sector", "Cocina en pantalla con tiempos de espera", "Factura electrónica, turnos del personal y costos de recetas", "Aplicación de escritorio con API y panel web"],
+    did: ["Salón con estado de mesas y comandas por sector", "Cocina en pantalla con tiempos de espera", "Integración con facturación electrónica de AFIP y módulos de OCR", "Turnos del personal y costos de recetas", "Aplicación de escritorio con API y panel web"],
     stack: ["Java", "Spring Boot", "JavaFX", "JWT", "MySQL / PostgreSQL", "React", "TypeScript", "Tailwind", "Zustand"],
     links: [["Código privado: lo muestro bajo pedido"]] },
   { name: "Despensa 24/7", tag: "Punto de venta", img: "../img/despensa-1-pos.webp",
@@ -258,6 +265,11 @@ const PROJECTS = [
     did: ["Escena 3D y animaciones con la identidad de la marca", "Reserva con calendario de disponibilidad real", "Agenda, fichas de clientas con datos de salud protegidos y caja", "Modo demo con base local para mostrarlo sin servidor"],
     stack: ["React", "TypeScript", "Tailwind", "Three.js", "GSAP", "Supabase", "PGlite", "Netlify"],
     links: [["Código privado: lo muestro bajo pedido"]] }
+];
+
+const EDU = [
+  { when: "Actualidad", t: "Estudiante de nivel superior · ISAUI", d: "Cursando en el Instituto Superior Arturo Umberto Illia. Profundizo en desarrollo de software, arquitecturas modernas y buenas prácticas de programación." },
+  { when: "Octubre 2023", t: "Fundamentos de Programación y Bases de Datos", d: "Certificación de Integral Capacitando con el aval de la UTN (FRC). 90 horas de lógica algorítmica y modelado relacional." }
 ];
 
 const PRINC = [
@@ -286,6 +298,7 @@ $("#projects").innerHTML = PROJECTS.map((p, i) => `
       <div class="plinks">${p.links.map(l => l[1] ? `<a href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])} ↗</a>` : `<small>${esc(l[0])}</small>`).join("")}</div>
     </div>
   </article>`).join("");
+$("#edu").innerHTML = EDU.map(e => `<div><b>${esc(e.when)}</b><h3>${esc(e.t)}</h3><p>${esc(e.d)}</p></div>`).join("");
 $("#princ").innerHTML = PRINC.map((p, i) => `<div><b>0${i + 1}</b><h3>${esc(p.t)}</h3><p>${esc(p.d)}</p></div>`).join("");
 
 const wa = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.texto)}`;

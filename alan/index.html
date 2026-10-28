@@ -77,6 +77,9 @@ section{padding:clamp(64px,10vw,120px) 0}
 .skill h3{font-size:1.15rem;margin-bottom:8px;letter-spacing:-.02em}
 .skill p{font-size:.95rem;margin:0}
 @media(max-width:560px){.skills{grid-template-columns:1fr}}
+.portrait{margin-top:28px;width:min(300px,100%);aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 6px rgba(127,191,138,.08)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+@media(max-width:860px){.portrait{width:200px}}
 /* stack */
 .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
 .stack-col{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;padding:22px}
@@ -170,6 +173,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="rv">
     <span class="eyebrow">Sobre mí</span>
     <h2>Construyo software que un negocio usa todos los días.</h2>
+    <figure class="portrait"><img src="alan.webp" alt="Alan Rodrigo Moreno" width="720" height="900" loading="lazy"></figure>
   </div>
   <div class="rv">
     <p>Soy desarrollador de software y trabajo de forma independiente a través de <b>Bambú Sistemas</b>, donde diseño, instalo y mantengo sistemas de gestión y páginas web a medida para negocios de distintos rubros.</p>
